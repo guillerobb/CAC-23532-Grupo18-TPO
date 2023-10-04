@@ -1,0 +1,124 @@
+*{
+    margin: 0px; /*normalizamos*/
+    padding: 0px; /*normalizamos*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --blue-primary: #042240;
+    --blue-title: #042240;
+    --gold-primary: goldenrod;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+main,
+article,
+.section-main,
+.section-aside {
+    padding: 10px;
+}
+
+.section-aside {
+    margin: 20px 0;
+}
+
+nav{
+    background-color: var(--blue-primary) ;
+    padding: 20px;
+    align-content:space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--gold-primary);
+    background-color: var(--blue-primary);
+    padding: 20px;
+}
+
+nav a:hover{
+    color: white;
+    font-weight:bolder;
+}
+
+h1, h2, h3, h4 {
+    color: var(--blue-title);
+}
+
+.carrousel{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    /*flex-wrap: nowrap;
+    overflow: scroll; */
+}
+
+.itemCarrousel{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    /*flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: var(--gold-primary);
+    width: 500px;
+    height: 500px;
+*/
+}
+
+main p {
+    font-size: medium;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.itemCarrousel:hover {
+    cursor: crosshair;
+    width: 75%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--blue-primary);
+    color: var(--gold-primary);
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.perfilesequipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+    align-items: stretch;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.perfilesequipo > article {
+    border: 1px solid var(--blue-primary);
+    box-shadow: 2px 2 px 6 px rgba(0, 0, 0, 3);
+}
+
+.perfilesequipo > article img {
+    max-width: 100%;
+}
+
+.card-text {
+    padding: 0 20px 20px;
+}
+
+.card-btn {
+    background-color: var(--blue-primary);
+    border: 0;
+    color: var(--gold-primary);
+    padding: 10px;
+    width: 100%;
+}
