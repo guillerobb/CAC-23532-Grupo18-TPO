@@ -7,18 +7,10 @@
     <title>Argentina Mundial!</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mundiales.html">Mundiales</a>
-            <a href="jugadores.html">Jugadores</a>
-            <a href="partidos.html">Partidos</a>
-            <a href="about.html">Acerca de</a>
-            <a href="contact.html">Contacto</a>
-        </nav>
-    </header>
-    <h1>Argentina Mundial!</h1>
-    <h2>Sitio no oficial sobre la Selección Argentina de Fútbol</h2>
+    <header id="header"></header>
+
+    <div id="tituloIndex"></div>
+    
     <div class="contenedor">
         <main>
             <div class="carrousel">
@@ -35,30 +27,26 @@
                 <article>
                     <h4>¿Messi o Maradona?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti debitis adipisci in blanditiis, quo ratione voluptatum perferendis quidem officiis deserunt perspiciatis ab dolores architecto animi velit necessitatibus reprehenderit voluptas veniam excepturi tempora numquam ut placeat labore? Ab quas, exercitationem consequatur laudantium, maiores esse omnis sapiente repellendus eveniet dolorum veritatis ratione.</p>
-                    <a href="messi-maradona.thml">Leer más..</a>
+                    <a href="messi-maradona.thml">Leer más...</a>
                 </article>
                 <article>
                     <h4>Los penales más sufridos de nuestras vidas</h4>
-                    <p>Momentos inolvidables (felices o no)!</p>
-                    <a href="penales.thml">Leer más..</a>
+                    <p>Momentos inolvidables (algunos felices y otros no tanto)!</p>
+                    <a href="penales.thml">Leer más...</a>
                 </article>
+
             </section>
         </main>
         <aside>
-            <h3>Noticias</h3>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
+            <div id="noticias">
+            </div>
         </aside>
     </div>
-    <footer>
-        <p>Derechos Reservados @Grupo 18 FullStack Python Comisión 23532 &#169;2023</p>
+    <footer id="footer">
+        
     </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/api-noticias.js"></script>
 </body>
 </html>

@@ -7,18 +7,10 @@
     <title>Argentina Mundial!</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mundiales.html">Mundiales</a>
-            <a href="jugadores.html">Jugadores</a>
-            <a href="partidos.html">Partidos</a>
-            <a href="about.html">Acerca de</a>
-            <a href="contact.html">Contacto</a>
-        </nav>
-    </header>
-    <h1>Argentina Mundial!</h1>
-    <h2>Sitio no oficial sobre la Selección Argentina de Fútbol</h2>
+    <header id="header"></header>
+
+    <div id="tituloIndex"></div>
+    
     <div class="contenedor">
         <main>
             <h3>¿Quienes somos?</h3>
@@ -69,20 +61,14 @@
             
         </main>
         <aside>
-            <h3>Noticias</h3>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
-            <section class="section-aside">
-                <h5>Lorem ipsum dolor sit amet.</h5>
-            </section>
+            <div id="noticias">
+            </div>
         </aside>
     </div>
-    <footer>
-        <p>Derechos Reservados @Grupo 18 FullStack Python Comisión 23532 &#169;2023</p>
+    <footer id="footer">
+        
     </footer>
+    <script src="js/index.js"></script>
+    <script src="js/api-noticias.js"></script>
 </body>
 </html>
