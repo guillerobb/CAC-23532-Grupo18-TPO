@@ -184,6 +184,18 @@ footer{
     opacity: 1.1;
 }
 
+.proximos-partidos > article {
+    background-color: var(--gold-primary);
+}
+
+.proximos-partidos > article .resaltar-label {
+    color: var(--blue-primary);
+}
+
+.proximos-partidos > article .fecha-partido {
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 @media screen and (max-width: 768px){
 	.contenedor-mundiales {
@@ -201,3 +213,4 @@ footer{
                             "columna-derecha";
 	}
 }
+
