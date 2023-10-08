@@ -19,7 +19,8 @@
 main,
 article,
 .section-main,
-.section-aside {
+.section-aside,
+form {
     padding: 10px;
     margin: 20px;
 }
@@ -195,6 +196,90 @@ footer{
 .proximos-partidos > article .fecha-partido {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.info-contacto h4 {
+    margin-bottom: 15px;
+    font-size: larger;
+}
+
+.info-contacto p {
+    font-size: medium;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-contacto a{
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: var(--blue-primary);
+    font-weight: 600;
+}
+
+.info-contacto a img{
+    width: 10%;
+    margin-right: 10px;
+}
+
+.formulario-contacto form p {
+    font-size: small;
+    padding-bottom: 5px;
+    color: var(--blue-primary);
+}
+
+.formulario-contacto form label {
+    font-size: small;
+    padding-bottom: 5px;
+    color: var(--blue-primary);
+}
+
+
+.formulario-contacto form input, textarea, select {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 12px;
+    border: 1px solid var(--gold-primary);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.formulario-contacto form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.formulario-contacto .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: var(--gold-primary);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.formulario-contacto .btn-enviar:hover {
+    background-color: var(--blue-primary);
+    color: var(--gold-primary);
 }
 
 @media screen and (max-width: 768px){
