@@ -247,7 +247,7 @@ footer{
 }
 
 
-.formulario-contacto form input, textarea, select {
+.formulario-contacto form input, textarea, select, button {
     width: 100%;
     padding: 12px 10px;
     font-size: 12px;
@@ -280,6 +280,67 @@ footer{
 .formulario-contacto .btn-enviar:hover {
     background-color: var(--blue-primary);
     color: var(--gold-primary);
+}
+
+.mensaje-enviado-modal {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+/*    height: 100vh;
+    width: 100vw;*/
+}
+
+.modal {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.show-modal {
+    pointer-events: auto;
+    opacity: 1;
+    top:37%;
+    left: 32%;
+    /*transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;*/
+}
+
+.btn-close-modal {
+    font-size: large;
+    width: 50%;
+    margin-top: 15%;
+    color: var(--blue-primary);
+    border: 1px solid var(--blue-primary);
+    background-color: var(--gold-primary);
+}
+
+.btn-close-modal:hover {
+    color: var(--gold-primary);
+    border: 1px solid var(--gold-primary);
+    background-color: var(--blue-primary);
 }
 
 @media screen and (max-width: 768px){

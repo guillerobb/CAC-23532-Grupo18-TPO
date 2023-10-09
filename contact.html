@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
+    <script src="js/validar-formulario-contacto.js"></script>
     <title>Argentina Mundial!</title>
 </head>
 
@@ -35,7 +36,7 @@
                 </div>
 
                 <div class="formulario-contacto">
-                    <form action="" method="post">
+                    <form id="formulario" action="" method="post">
                         <!-- <label for="name">Nombre</label> -->
                         <input type="text" name="name" id="name" placeholder="Nombre">
                         <br>
@@ -64,7 +65,7 @@
                         <textarea name="textMensaje" id="textMensaje" cols="30" rows="10"
                             placeholder="Escribe tu mensaje aquí..."></textarea>
                         <br>
-                        <input type="submit" value="Enviar" class="btn-enviar">
+                        <button class="btn-enviar" type="button" onclick="enviarFormulario()" id="open">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -73,6 +74,15 @@
             <!--<div id="noticias">
             </div> -->
         </aside>
+
+    </div>
+    <div class="mensaje-enviado-modal" id="mensaje-enviado-modal">
+        <div class="modal">
+            <h1>Muchas gracias por escribirnos</h1>
+            <p>Te agradecemos por escribirnos!</p>
+            <p>Nos pondremos en contacto apenas nos sea posible para que conversemos.</p>
+            <button id="close" class="btn-close-modal">Cerrar</button>
+        </div>
     </div>
     <footer id="footer">
 
