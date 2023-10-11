@@ -12,7 +12,7 @@ let header= `
 document.getElementById("header").innerHTML= header;
 
 let tituloIndex = `
-<h1>Argentina Mundial!</h1>
+<h1><img src="encabezado.jpg" border="1" width="100%" height="200"</h1>
 <h6>Sitio no oficial sobre la Selección Argentina de Fútbol</h6>
 `
 document.getElementById("tituloIndex").innerHTML= tituloIndex;

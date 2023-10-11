@@ -4,6 +4,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body{
+background-image: url("img/Varias/fondo.jpg");
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size: cover;
+
+}
+
 :root {
     --blue-primary: #042240;
     --blue-title: #042240;
