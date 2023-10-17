@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Argentina Mundial!</title>
+    </head>
+    <body>
+
+        <header id="header">
+
+        </header>
+        <div id="tituloIndex"></div>
+
+        <!-- creamos la galería -->
+        <div class="container">
+            <h2>Galería de Videos de la Selección Argentina</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="caracteristica-img">
+                        <img src="img/galleryvideos/escudo.jpg" width="100%" alt="escudo Argentino">
+                        <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/himnoargentino.mp4')">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pequena-img-row">
+                        <div class="pequena-img">
+                            <img src="img/galleryvideos/equipo-himno.jpg" alt="equipo Argentina">
+                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/LaSeleccionArgentina.mp4')">
+                        </div>
+                        <p class="parrafo">Los Campeones del Mundo!<br>Qatar 2022</p>
+                    </div>
+
+                    <div class="pequena-img-row">
+                        <div class="pequena-img">
+                            <img src="img/galleryvideos/penales.jpg" alt="equipo Argentina">
+                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/penales.mp4')">
+                        </div>
+                        <p class="parrafo">Esperando los Penales!<br>Qatar 2022</p>
+                    
+                    </div>
+
+                    <div class="pequena-img-row">
+                        <div class="pequena-img">
+                            <img src="img/galleryvideos/festejo.jpg" alt="equipo Argentina">
+                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/festejo.mp4')">
+                        </div>
+                        <p class="parrafo">Festejo del Campeón!<br>Qatar 2022</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="video-player" id="videoPlayer">
+            <video src="img/galleryvideos/videos/himnoargentino.mp4" width="100%" controls autoplay muted id="miVideo"></video>
+            <img src="img/galleryvideos/close-btn.png" alt="cerra video" class="close-btn" onclick="stopVideo()">
+        </div>
+
+
+    </body>
+    <footer id="footer">
+
+    </footer>
+    <script src="js/index.js"></script>
+    
+</html>
