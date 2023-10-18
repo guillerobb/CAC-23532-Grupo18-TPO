@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js/validar-formulario-contacto.js"></script>
+    <title>Argentina Mundial!</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div id="tituloIndex"></div>
+
+    <div class="contenedor">
+        <main>
+            <h3>Escríbenos y cuentanos de tí</h3>
+            <br>
+            <p>Estaremos encantados de recibir tu mensaje, ya sea que quieras darnos un consejo sobre que te parece que
+                podemos mejorar o sobre algo que consideres que falta en este sitio.</p>
+            <br>
+            <p>Es importante comentar que muchas de las ideas de contenido surgen a partir de comentarios de los
+                lectores, por lo que si dudas entre escribirnos o no escribirnos, siemple elegí escribirnos 😉.</p>
+            <br>
+            <div class="contenedor-formulario">
+                <div class="info-contacto">
+                    <h4>Contáctanos</h4>
+                    <p>Puedes escribirnos un email, llamarnos o incluso enviarnos una carta!</p>
+                    <a href="#"><img src="img/iconos/phone-receiver-silhouette.png" alt="Número de teléfono"> +54 9 341
+                        6677888</a>
+                    <a href="#"><img src="img/iconos/email.png" alt="Correo electrónico">email@laseleccion.com</a>
+                    <a href="#"><img src="img/iconos/location.png" alt="Dirección de nuestras oficinas">San Juan 2020,
+                        Rosario, Santa Fe, Argentina</a>
+                </div>
+
+                <div class="formulario-contacto">
+                    <form id="formulario" action="" method="post">
+                        <!-- <label for="name">Nombre</label> -->
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <br>
+                        <!-- <label for="lastName">Apellido</label> -->
+                        <input type="text" name="lastName" id="lastName" placeholder="Apellido">
+                        <br>
+                        <!-- <label for="email">E-mail</label> -->
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico">
+                        <br>
+                        <p>Nos gustaría que nos indiques tu nacionalidad, sólo para saber si hay fanáticos de la
+                            selección
+                            argentina que no nacieron en Argentina.</p>
+                        <!-- <label for="nationality">Nacionalidad</label> -->
+                        <input type="text" name="nationality" id="nationality" placeholder="Tu país de origen">
+                        <br>
+                        <label for="age">Edad</label>
+                        <input type="number" name="age" id="age">
+                        <br>
+                        <label for="reason">Motivo</label>
+                        <select name="reason" id="reason">
+                            <option value="1">Quiero que escriban de...</option>
+                            <option value="2">Hay un error en...</option>
+                            <option value="3">Entradas para el partido contra...</option>
+                        </select>
+                        <br>
+                        <textarea name="textMensaje" id="textMensaje" cols="30" rows="10"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <br>
+                        <button class="btn-enviar" type="button" onclick="enviarFormulario()" id="open">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <!--<div id="noticias">
+            </div> -->
+        </aside>
+
+    </div>
+    <div class="mensaje-enviado-modal" id="mensaje-enviado-modal">
+        <div class="modal">
+            <h1>Muchas gracias por escribirnos</h1>
+            <p>Te agradecemos por escribirnos!</p>
+            <p>Nos pondremos en contacto apenas nos sea posible para que conversemos.</p>
+            <button id="close" class="btn-close-modal">Cerrar</button>
+        </div>
+    </div>
+    <footer id="footer">
+
+    </footer>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

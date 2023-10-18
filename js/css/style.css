@@ -148,10 +148,6 @@ footer{
     width: 100%;
 }
 
-.card-btn:active{
-    transform: scale(0.98);
-}
-
 .contenedor-mundiales {
     width: 90%;
 	max-width: 100%;
