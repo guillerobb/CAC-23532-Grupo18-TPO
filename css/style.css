@@ -355,6 +355,96 @@ footer{
     background-color: var(--blue-primary);
 }
 
+.container {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.container h2 {
+    padding: 60px 0;
+    color: #fff;
+    font-size: 44px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.caracteristica-img {
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.pequena-img-row {
+    display: flex;
+    background: #fff;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+    width: 85%;
+}
+
+.pequena-img {
+    position: relative;
+}
+
+.pequena-img img {
+    width: 150px;
+}
+
+.pequena-img-row p {
+    margin-left: 20px;
+    color: #042240;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.play-btn {
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.pequena-img .play-btn {
+    width: 35%;
+}
+
+.video-player {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+video:focus {
+    outline: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 60px;
+    right: 260px;
+    width: 50px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px){
 	.contenedor-mundiales {
 		grid-template-areas: "columna-izquierda columna-derecha"
