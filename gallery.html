@@ -11,7 +11,7 @@
         <header id="header">
 
         </header>
-        <div id="tituloIndex"></div>
+        <div id="tituloIndex"></div>            
 
         <!-- creamos la galería -->
         <div class="container">
@@ -19,32 +19,32 @@
             <div class="row">
                 <div class="col">
                     <div class="caracteristica-img">
-                        <img src="img/galleryvideos/escudo.jpg" width="100%" alt="escudo Argentino">
-                        <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/himnoargentino.mp4')">
+                        <img src="img/galeriaVideos/escudo.jpg" width="100%" alt="escudo Argentino himno">
+                        <img src="img/galeriaVideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('https://www.youtube.com/embed/PkG1bXguU_0?si=LL0tlCHs-5d8HAjU&amp;start=19')">
                     </div>
                 </div>
                 <div class="col">
                     <div class="pequena-img-row">
                         <div class="pequena-img">
-                            <img src="img/galleryvideos/equipo-himno.jpg" alt="equipo Argentina">
-                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/LaSeleccionArgentina.mp4')">
+                            <img src="img/galeriaVideos/equipo-himno.jpg" alt="equipo Argentina todos los goles">
+                            <img src="img/galeriaVideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('https://www.youtube.com/embed/0IIongNKkOk?si=3mV9vVfOBq9Kty0c')">
                         </div>
                         <p class="parrafo">Los Campeones del Mundo!<br>Qatar 2022</p>
                     </div>
 
                     <div class="pequena-img-row">
                         <div class="pequena-img">
-                            <img src="img/galleryvideos/penales.jpg" alt="equipo Argentina">
-                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/penales.mp4')">
+                            <img src="img/galeriaVideos/penales.jpg" alt="equipo Argentina penales">
+                            <img src="img/galeriaVideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('https://www.youtube.com/embed/R0mSrRLghow?si=_JGdgjPQl3Uye3Ga')">
                         </div>
-                        <p class="parrafo">Esperando los Penales!<br>Qatar 2022</p>
+                        <p class="parrafo">Vivimos los Penales!<br>Qatar 2022</p>
                     
                     </div>
 
                     <div class="pequena-img-row">
                         <div class="pequena-img">
-                            <img src="img/galleryvideos/festejo.jpg" alt="equipo Argentina">
-                            <img src="img/galleryvideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('img/galleryvideos/videos/festejo.mp4')">
+                            <img src="img/galeriaVideos/festejo.jpg" alt="equipo Argentina festejo">
+                            <img src="img/galeriaVideos/play-btn.png" class="play-btn" alt="boton de play" onclick="playVideo('https://www.youtube.com/embed/9Z5zUpD_XwE?si=leVghsB2Hxp4b_2u')">
                         </div>
                         <p class="parrafo">Festejo del Campeón!<br>Qatar 2022</p>
                     </div>
@@ -55,15 +55,27 @@
         </div>
         
         <div class="video-player" id="videoPlayer">
-            <video src="img/galleryvideos/videos/himnoargentino.mp4" width="100%" controls autoplay muted id="miVideo"></video>
-            <img src="img/galleryvideos/close-btn.png" alt="cerra video" class="close-btn" onclick="stopVideo()">
+            <iframe width="80%" height="500" src="https://www.youtube.com/embed/PkG1bXguU_0?si=LL0tlCHs-5d8HAjU&amp;start=19" allowfullscreen id="miVideo"></iframe>
+            <img src="img/galeriaVideos/close-btn.png" alt="cerra video" class="close-btn" onclick="stopVideo()">
         </div>
+        <script>
+            let videoPlayer = document.getElementById("videoPlayer");
+            let miVideo = document.getElementById("miVideo");
 
+            function stopVideo(){
+                videoPlayer.style.display = "none";
+            }
+
+            function playVideo(file){
+                miVideo.src = file;
+                videoPlayer.style.display = "block";
+            }
+        </script>
 
     </body>
     <footer id="footer">
 
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/js/index.js"></script>
     
 </html>
