@@ -6,6 +6,7 @@ let header= `
 <a href="partidos.html">Partidos</a>
 <a href="about.html">Acerca de</a>
 <a href="contact.html">Contacto</a>
+<a href="gallery.html">Gallery</a>
 </nav>
 `
 
