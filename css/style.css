@@ -43,7 +43,7 @@ nav{
     background-color: var(--blue-primary) ;
     padding: 20px;
     align-content:space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 nav a {
@@ -56,6 +56,15 @@ nav a {
 nav a:hover{
     color: white;
     font-weight:bolder;
+}
+
+nav a img {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 100%;
+    border-radius: 5px;
+    border: var(--gold-primary) 2px solid;
 }
 
 h1 {
@@ -208,6 +217,40 @@ footer{
 .proximos-partidos > article .fecha-partido {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor-imgHeader {
+    width: 35%;
+	max-width: 100%;
+	margin: 20px auto;
+	display: inline-flex;
+    margin: 25px;
+	/* grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "columna-izquierda columna-derecha columna-derecha columna-derecha columna-derecha"
+ */    
+    /* justify-content: left;
+    position: fixed;
+    pointer-events: none;
+    top: 75px;
+    left: 25px;
+     */
+}
+
+.imgEncabezadoIndex {
+    border: 1;
+    width: 50%;
+    height: 100%
+}
+.contenedor-imgHeader p {
+    font-size: 65px;
+    color: red
+}
+
+.imgEncabezadoIndex img {
+    border: 1;
+    width: 15%;
+    height: 25%
 }
 
 .contenedor-formulario {
