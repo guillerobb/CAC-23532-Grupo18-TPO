@@ -33,6 +33,10 @@ form {
     margin: 20px;
 }
 
+.section-news {
+    margin: 5px;
+}
+
 .section-aside {
     margin: 10px 5px;
     background-color:var(--blue-background-news);
