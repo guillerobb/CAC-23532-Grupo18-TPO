@@ -1,6 +1,5 @@
 let header= `
 <nav>
-<a href="index.html"><img src="img/encabezado.jpg"></a>
 <a href="index.html">Home</a>
 <a href="mundiales.html">Mundiales</a>
 <a href="jugadores.html">Jugadores</a>
@@ -10,14 +9,11 @@ let header= `
 <a href="gallery.html">Gallery</a>
 </nav>
 `
-
+//<a href="index.html"><img src="img/encabezado.jpg"></a>
+//<p>Argentina Mundial!</p>
 document.getElementById("header").innerHTML= header;
 
 let tituloIndex = `
-<!--<div class="contenedor-imgHeader">
-    <img src="img/encabezado.jpg" class="imgEncabezadoIndex">
-    <p>Argentina Mundial!</p>
-</div> -->
 <h6>Sitio no oficial sobre la Selección Argentina de Fútbol</h6>
 `
 document.getElementById("tituloIndex").innerHTML= tituloIndex;

@@ -2,8 +2,30 @@
     margin: 0px; /*normalizamos*/
     padding: 0px; /*normalizamos*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
+    .logo{
+        display:flex;
+        background-color: cadetblue;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        height: 100px;
+        display: flex;
+    }
+    .logo p{
+        font-weight: bold;
+        font-size: 50px;
+        font-style: normal;
+        font-family: sans-serif;
+        border-color: brown;
+        color: aqua;
+        display: flex;
+        float: right;
+    }
+   
 body{
 background-image: url("img/Varias/fondo.jpg");
 background-repeat: no-repeat;
@@ -12,16 +34,18 @@ background-size: cover;
 
 }
 
-:root {
+:root { 
     --blue-primary: #042240;
     --blue-title: #042240;
     --gold-primary: goldenrod;
     --blue-background-news: #c3e3fd;
+    
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    
 }
 
 main,
@@ -44,6 +68,8 @@ nav{
     padding: 20px;
     align-content:space-between;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav a {
