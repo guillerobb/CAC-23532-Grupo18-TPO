@@ -54,7 +54,7 @@ article,
 .section-aside,
 form {
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .section-news {
@@ -534,4 +534,123 @@ video:focus {
                             "columna-derecha";
 	}
 }
+
+.slider-box {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    align-content: center;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 200px;
+    top: 450px;
+    color: #042240;
+    background-color: #fff;
+    margin-left: 150px;
+    border: 2px var(--gold-primary) solid;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.slider-texto:hover {
+    opacity: 1.1;
+}
+
+.slider-texto h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.slider-texto p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.slider-box img {
+    width: 100%;
+    opacity: 0.95;
+}
+
+.slider-box img:hover {
+    opacity: 1.1;
+}
+
+.btn-ver-mas {
+    width: 25%;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    outline: 0px;
+    background-color: var(--gold-primary);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn-ver-mas:hover {
+    background-color: var(--blue-primary);
+    color: var(--gold-primary);
+}
+
+@keyframes slide {
+    0% {margin-left: 0; }
+    20% {margin-left: 0; }
+
+    25% {margin-left: -100%; }
+    45% {margin-left: -100%; }
+
+    50% {margin-left: -200%; }
+    70% {margin-left: -200%; }
+
+    75% {margin-left: -300%; }
+    100% {margin-left: -300%; }
+}
+
+@media(max-width:991px) {
+    .slider-box {
+        width: 100%;
+    }
+
+    .slider-texto{
+        top:225px;
+        padding: 0 5px;
+        margin-left: 100px;
+        margin-bottom: 5px;
+    }
+
+    .slider-texto h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .slider-texto p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .btn-ver-mas {
+        width: 20%;
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
 

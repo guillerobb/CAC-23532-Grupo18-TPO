@@ -4,9 +4,9 @@ let header= `
 <a href="mundiales.html">Mundiales</a>
 <a href="jugadores.html">Jugadores</a>
 <a href="partidos.html">Partidos</a>
-<a href="about.html">Acerca de</a>
+<a href="gallery.html">Galeria</a>
 <a href="contact.html">Contacto</a>
-<a href="gallery.html">Gallery</a>
+<a href="about.html">Acerca de</a>
 </nav>
 `
 //<a href="index.html"><img src="img/encabezado.jpg"></a>
@@ -14,7 +14,7 @@ let header= `
 document.getElementById("header").innerHTML= header;
 
 let tituloIndex = `
-<h6>Sitio no oficial sobre la Selección Argentina de Fútbol</h6>
+<h4>Sitio no oficial sobre la Selección Argentina de Fútbol</h4>
 `
 document.getElementById("tituloIndex").innerHTML= tituloIndex;
 
