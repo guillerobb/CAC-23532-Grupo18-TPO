@@ -4,7 +4,7 @@ function enviarFormulario() {
     let lastName = document.getElementById("lastName").value
     let email = document.getElementById("email").value
     let nationality = document.getElementById("nationality").value
-    let age = document.getElementById("age").value
+    let age = parseInt(document.getElementById("age").value)
     let reason = document.getElementById("reason").value
     let textMensaje = document.getElementById("textMensaje").value
 
@@ -14,6 +14,21 @@ function enviarFormulario() {
         return;
     } else {
         
+        let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+        if (emailRegex.test(email)) {
+            // No hacemos nada por ahora.
+        } else {
+            alert('Por favor, Ingrese un email válido.');
+            return;
+        }
+
+        if (Number.isInteger(age)) {
+            // Todo OK.
+        } else {
+            alert('Por favor, en Edad ingrese un nº entero.');
+            return;
+        }
+
         let open = document.getElementById("open")
         open.addEventListener('click', () => {
             console.log('agregar show-modal');
