@@ -48,7 +48,7 @@ let htmlNoticias = `<h3>Noticias</h3><br>`
                              <h4>${pieceOfNews.title}</h4>
                              <p>${pieceOfNews.body}</p>
                              <!-- <a href="${pieceOfNews.url}" target="_blank">Leer más...</a> -->
-                             <a href="#" target="_blank">Leer más...</a>
+                             <a href="#">Leer más...</a>
                              </section>`;
          })
          htmlNoticias += `</div>`
