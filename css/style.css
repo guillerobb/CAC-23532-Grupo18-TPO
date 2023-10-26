@@ -44,8 +44,8 @@ background-size: cover;
 
 .contenedor {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
 }
 
 main,
@@ -536,7 +536,7 @@ video:focus {
 }
 
 .slider-box {
-    width: 1280px;
+    width: 100%;
     height: auto;
     margin: 50px auto;
     overflow: hidden;
@@ -624,15 +624,27 @@ video:focus {
     100% {margin-left: -300%; }
 }
 
-@media(max-width:991px) {
-    .slider-box {
-        width: 100%;
-    }
+.contenedor main {
+    grid-area: contenedor-main;
+}
+
+.contenedor aside {
+    grid-area: contenedor-aside;
+}
+
+.contenedor {
+    grid-template-areas: "contenedor-main contenedor-main contenedor-main contenedor-main contenedor-aside contenedor-aside"
+}
+
+@media screen and (max-width: 1200px){
+	.contenedor {
+		grid-template-areas: "contenedor-main contenedor-main contenedor-main contenedor-main contenedor-main contenedor-aside";
+	}
 
     .slider-texto{
-        top:225px;
+        top:350px;
         padding: 0 5px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-bottom: 5px;
     }
 
@@ -653,4 +665,47 @@ video:focus {
     }
 }
 
+@media screen and (max-width: 1000px){
+	.contenedor {
+		grid-template-areas: "contenedor-main contenedor-main contenedor-main contenedor-main contenedor-main contenedor-main"
+                            "contenedor-aside contenedor-aside contenedor-aside contenedor-aside contenedor-aside contenedor-aside";
+	}
 
+    .slider-texto{
+        top:350px;
+        padding: 0 5px;
+        margin-left: 250px;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+	.contenedor {
+		grid-template-areas: "contenedor-main contenedor-main contenedor-main contenedor-main contenedor-main contenedor-main"
+                            "contenedor-aside contenedor-aside contenedor-aside contenedor-aside contenedor-aside contenedor-aside";
+	}
+
+    .slider-texto{
+        top:200px;
+        padding: 0 5px;
+        margin-left: 80px;
+        margin-bottom: 5px;
+    }
+
+    .slider-texto h2 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .slider-texto p {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .btn-ver-mas {
+        width: 35%;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
