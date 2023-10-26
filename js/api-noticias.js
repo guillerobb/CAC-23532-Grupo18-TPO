@@ -15,10 +15,17 @@ let htmlNoticias = `<h3>Noticias</h3><br>`
 
 fetch('https://newsapi.org/v2/everything?q=argentina futbol&language=es&apiKey=b4a8308d1ff64fef8932bb6cb65ed9e9&sortBy=popularity&pageSize=5')
     .then(res => {
-        return res.json();
+        console.log('Status', res.status)
+        console.log('statusText', res.statusText)
+        if (res.ok) {
+            console.log('Success Fetch API for retrieve news')
+            return res.json();
+        } else {
+            console.log('Error Trying to retrieve news')
+        }
     })
     .then(data => {
-        //console.log('data', data);
+        console.log('data', data);
         htmlNoticias += `<div id="section-news" class="section-news">`
         data.articles.forEach(pieceOfNews => {
             //console.log(pieceOfNews);
