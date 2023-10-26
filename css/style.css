@@ -67,6 +67,10 @@ form {
 
 }
 
+.section-aside p {
+    font-size: small;
+}
+
 nav{
     background-color: var(--blue-primary) ;
     padding: 20px;
