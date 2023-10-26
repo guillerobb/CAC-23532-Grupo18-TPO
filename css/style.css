@@ -813,6 +813,7 @@ video:focus {
     .nav-visible {
         opacity: 1;
         visibility: visible;
+        z-index: 1;
     }
 
     .logo img{
