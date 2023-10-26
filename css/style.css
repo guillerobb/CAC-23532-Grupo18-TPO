@@ -537,6 +537,13 @@ video:focus {
 		grid-template-areas: "columna-izquierda"
                             "columna-derecha";
 	}
+	.container h2 {
+        font-size: 22px;
+    }
+
+    	.pequena-img-row {
+        width: 120%;
+    }
 }
 
 .slider-box {
