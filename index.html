@@ -1,99 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/iconos/pelota.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css\style.css">
-    <title>Argentina Mundial!</title>
-    <div class="logo">
-        <img src="img/logo.jpg" alt="logo" />
-        <p>ARGENTINA MUNDIAL</p> 
-    </div> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Bootstrap 5 icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>CRUD Com.23532</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header id="header">
-     
-    </header>
-
-    <div id="tituloIndex"></div>
     
-    <div class="contenedor">
-        
-        <main>
-            <!--
-            <div class="carrousel">
-                <img src="img/carrousel/argentina-qatar-2022.jpg" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-                <img src="img/carrousel/argentina-qatar-2022-2.webp" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-                <img src="img/carrousel/argentina-qatar-2022-3.webp" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-                <img src="img/carrousel/seleccion-argentina-messi-1.webp" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-                <img src="img/carrousel/gol-julian-alvarez-festejo.webp" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-                <img src="img/carrousel/cuerpo-tecnico-scaloni-himno_1440x810.webp" alt="Selección Argentina Trofeo Qatar 2022" class="itemCarrousel">
-            </div>
-            -->
-            <div class="slider-box">
-                <ul>
-                    <li>
-                        <img src="img/carrousel/argentina-campeon-del-mundo-1475376.jpg" alt="">
-                        <div class="slider-texto">
-                            <h2>Argentina Festejando!</h2>
-                            <p>El país salió a festejar en cada calle.</p>
-                            <a href="gallery.html" target="_blank"><button class="btn-ver-mas">Ver más...</button></a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/carrousel/messi-trofeo-qatar-2023.webp" alt="">
-                        <div class="slider-texto">
-                            <h2>Trabajo en equipo!</h2>
-                            <p>¿Cómo logró ser Campeón del Mundo en 2023?</p>
-                            <a href="https://www.youtube.com/watch?v=8MH5bdnrDGQ" target="_blank"><button class="btn-ver-mas">Ver más...</button></a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/carrousel/argentina-qatar-2022.jpg" alt="">
-                        <div class="slider-texto">
-                            <h2>Levantando la Copa 2023!</h2>
-                            <p>Mirá cómo fue el momento de la premiación!</p>
-                            <a href="https://www.youtube.com/watch?v=uYuUFhW7Vi8" target="_blank"><button class="btn-ver-mas">Ver más...</button></a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/carrousel/dibu-martinez-1480127.jpg" alt="">
-                        <div class="slider-texto">
-                            <h2>Un momento para el infarto!</h2>
-                            <p>Reviví ese momento épico!</p>
-                            <a href="https://www.youtube.com/watch?v=fIsWgE8wwi4" target="_blank"><button class="btn-ver-mas">Ver más...</button></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <h2>Artículos más leidos</h2>
-            <section class="section-main">
-                <article>
-                    <h4>¿Messi o Maradona?</h4>
-                    <p>¿quién es el futbolista más querido de la historia de Argentina? ChatGPT responde...</p>
-                    <a href="https://larepublica.pe/datos-lr/respuestas/2023/06/30/lionel-messi-o-maradona-quien-es-el-futbolista-mas-querido-de-la-historia-de-argentina-chatgpt-responde-messi-maradonna-diego-armando-maradonna-lionel-messi-argentina-evat-2789670" target="_blank" rel="noopener">Leer más...</a>
-                </article>
-                <article>
-                    <h4>Los penales más sufridos de nuestras vidas</h4>
-                    <p>Momentos inolvidables (algunos felices y otros no tanto)!</p>
-                    <a href="https://www.ole.com.ar/futbol-internacional/argentina-yugoslavia-penales-italia_0_98-lgt0te.html"  target="_blank" rel="noopener">Leer más...</a>
-                </article>
 
-            </section>
-        </main>
-        <aside>
-            <div id="noticias">
+    <section class="p-3">
+
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary newUser" data-bs-toggle="modal" data-bs-target="#userForm">Nuevo Socio/a<i class="bi bi-people"></i></button>
             </div>
-        </aside>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-hover mt-3 text-center table-bordered">
+
+                    <thead>
+                        <tr>
+                            <th>Socio/a</th>
+                            <th>Imagen</th>
+                            <th>Apellido y Nombre</th>
+                            <th>Edad</th>
+                            <th>Calle y Localidad</th>
+                            <th>Email</th>
+                            <th>Celular</th>
+                            <th>Código Postal</th>
+                            <th>Fecha de Nac.</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="data"></tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Modal Form-->
+    <div class="modal fade" id="userForm">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Completar</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <label for="imgInput" class="upload">
+                                <input type="file" name="" id="imgInput">
+                                <i class="bi bi-plus-circle-dotted"></i>
+                            </label>
+                            <img src="img/logo.jpg" alt="" width="200" height="200" class="img">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Apellido y Nombre:</label>
+                                <input type="text" name="" id="name" required>
+                            </div>
+                            <div>
+                                <label for="age">Edad:</label>
+                                <input type="number" name="" id="age" required>
+                            </div>
+                            <div>
+                                <label for="city">Calle y Localidad:</label>
+                                <input type="text" name="" id="city" required>
+                            </div>
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">Celular:</label>
+                                <input type="text" name="" id="phone" minlength="11" maxlength="11" required>
+                            </div>
+                            <div>
+                                <label for="post">Cod. Postal:</label>
+                                <input type="text" name="" id="post" required>
+                            </div>
+                            <div>
+                                <label for="sDate">Fecha de Nac.:</label>
+                                <input type="date" name="" id="sDate" required>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="myForm" class="btn btn-primary submit">Enviar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer id="footer">
-        
-    </footer>
 
-    <script src="js/index.js"></script>
-    <script src="js/api-noticias.js"></script>
+    <!--Read Data Modal-->
+    <div class="modal fade" id="readData">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Perfil</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <img src="img/logo.jpg" alt="" width="200" height="200" class="showImg">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Apellido y Nombre:</label>
+                                <input type="text" name="" id="showName" disabled>
+                            </div>
+                            <div>
+                                <label for="age">Edad:</label>
+                                <input type="number" name="" id="showAge" disabled>
+                            </div>
+                            <div>
+                                <label for="city">Calle y Localidad:</label>
+                                <input type="text" name="" id="showCity" disabled>
+                            </div>
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="" id="showEmail" disabled>
+                            </div>
+                            <div>
+                                <label for="phone">Celular:</label>
+                                <input type="text" name="" id="showPhone" minlength="11" maxlength="11" disabled>
+                            </div>
+                            <div>
+                                <label for="post">Cod. Postal:</label>
+                                <input type="text" name="" id="showPost" disabled>
+                            </div>
+                            <div>
+                                <label for="sDate">Fecha de Nac.:</label>
+                                <input type="date" name="" id="showsDate" disabled>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
